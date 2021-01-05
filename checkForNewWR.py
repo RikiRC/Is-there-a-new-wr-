@@ -6,7 +6,7 @@ wr_database_temp = {}
 wr_database_temp['data'] = []
 
 for i in gamesList:
-    url = 'https://www.speedrun.com/api/v1/games/'+i+'/records?top=1&miscellaneous=yes&scope=full-game'
+    url = 'https://www.speedrun.com/api/v1/games/'+i+'/records?top=1&miscellaneous=yes&scope=full-game&max=200'
     headers = {
         'User-Agent': 'Is-there-a-new-wr/0.2'
     }
