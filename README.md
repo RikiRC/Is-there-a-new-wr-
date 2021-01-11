@@ -15,5 +15,4 @@ In example I am using Grand Theft Auto series if you want to check WRs for anoth
 
 
 # ToDo
-- Modify script to get extended categories for games,
-- Integration with Twitter API,
+- Modify script to get extended categories for games
