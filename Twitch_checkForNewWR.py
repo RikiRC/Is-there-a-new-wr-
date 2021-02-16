@@ -16,7 +16,7 @@ class TwitchBot(irc.bot.SingleServerIRCBot):
         self.channel = '#' + channel.lower()
 
         url = 'https://api.twitch.tv/kraken/users?login=' + channel
-        headers = {'Client-ID': client_id, 'Accept': 'application/vnd.twitchtv.v5+json', 'Authorization': 'oauth:'+self.token}
+        headers = {'Client-ID': client_id, 'Accept': 'application/vnd.twitchtv.v5+json'}
         r = requests.get(url, headers=headers).json()
         self.channel_id = r['users'][0]['_id']
 
